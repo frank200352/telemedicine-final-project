@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Telemedicine - Book an Appointment">
+    <title>Book Appointment - Medicare</title>
+    <link rel="stylesheet" href="stylese.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/medical-care-logo.png" alt="Telemedicine Logo">
+        <h1>Welcome to Medicare</h1>
+        <p>Your trusted virtual healthcare partner</p>
+        <p>Book an Appointment</p>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for doctors, services, or appointments">
+            <button>Search</button>
+        </div>
+    </header>
+
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="register.html">Register</a>
+        <a href="booking.html">Book Appointment</a>
+        <a href="connect.html">Connect</a>
+        <a href="login.html">Login</a>
+    </nav>
+
+    <section class="booking-form">
+        <h2>Book Your Appointment</h2>
+        <form action="booking_process.php" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="doctor">Select Doctor</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="">-- Select a Doctor --</option>
+                    <option value="dr_smith">Dr. Smith</option>
+                    <option value="dr_jones">Dr. Jones</option>
+                    <option value="dr_brown">Dr. Brown</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Appointment Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Preferred Time</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Book Appointment</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Medicare. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://wa.me/" target="_blank">WhatsApp</a>
+            <a href="https://facebook.com/" target="_blank">Facebook</a>
+            <a href="mailto:contact@medicare.com" target="_blank">Contact Us</a>
+            <a href="https://twitter.com/" target="_blank">Twitter</a>
+            <a href="https://instagram.com/" target="_blank">Instagram</a>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
